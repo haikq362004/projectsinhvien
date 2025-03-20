@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường đại học hải phòng</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="boder">
+        <div class="header">
+            <div class="logo">
+                <div class="box">
+                    <a href="welcome.html"><img src="assets/images/logo.png" width="80" height="80"></a>
+                    <span style="font-size: 30px;">HPUni</span>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <div class="info">
+                <button>
+                    <i class="fa-solid fa-circle-user" style="font-size: 40px; color: #7082D6"></i>
+                    <span class="student_name" id="text_name">Nguyễn Sĩ Hải</span>
+                    <ul id="dropdown">
+                        <li>
+                            Đổi mật khẩu
+                        </li>
+                        <li>
+                            Đăng xuất
+                        </li>
+                    </ul>
+                </button>
+            </div>
+        </div>
+        <!-- <div class="banner">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li id="home"><i class="fa-solid fa-house"></i><a href="welcome.html">Thông tin sinh viên</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div> -->
+        <div class="infomation">
+            <h1>THÔNG TIN SINH VIÊN</h1>
+            <div class="info_student">
+                <table>
+                    <tr>
+                        <td>Mã sinh viên:</td>
+                        <td id="student_id" style="color: #2333ad ;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Họ và tên:</td>
+                        <td id="student_name" style="color: #2333ad   ;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lớp:</td>
+                        <td id="student_class" style="color: #2333ad  ;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Giới tính:</td>
+                        <td id="student_gender" style="color: #2333ad  ;"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Số điện thoại:</td>
+                        <td id="student_phone" style="color: #2333ad;"></td>
+                    </tr>
+                    <tr>
+                        <td>Cố vấn:</td>
+                        <td id="Academic_advisor" style="color: #2333ad;"></td>
+                    </tr>
+                    <tr>
+                        <td>Tình trạng:</td>
+                        <td id="student_presence" style="color: #2333ad   ;"></td>
+                    </tr>
+                    <tr>
+                        <td>Học phí còn thiếu:</td>
+                        <td id="student_fee" style="color: #2333ad;"></td>
+                    </tr>
+                    <tr>
+                        <td>Bảo hiểm y tế:</td>
+                        <td id="Health_insurance" style="color: #2333ad;"></td>
+                    </tr>
+
+                </table>
+                <img src="assets/images/Screenshot 2025-03-12 224036.png" alt="">
+            </div>
+            <br>
+            <h1>TÌNH TRẠNG HỌC TẬP</h1>
+            <div class="info_learn">
+                <table>
+                    <tr>
+                        <td>Tổng tín chỉ :</td>
+                        <td id="student_gpa"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Trung bình tích luỹ:</td>
+                        <td id="student_gpa"></td>
+                    </tr>
+                    <tr>
+                        <td>Xếp loại:</td>
+                        <td id="student_gpa"></td>
+                    </tr>
+                    <tr>
+                        <td>Số môn còn nợ:</td>
+                        <td id="student_failed_credits"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/welcome.js"></script>
+
+</html>

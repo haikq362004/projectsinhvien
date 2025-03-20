@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/cssdangnhap/login.css">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="form-1">
+                <h1>Quên mật khẩu</h1>
+                <span>Vui lòng nhập Email để xác thực thông tin</span>
+                <input id="email" type="email" placeholder="Email">
+                <button type="submit">Xác nhận</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form id="form-login">
+                <h1>Đăng nhập</h1>
+                <span>Hãy nhập email và mật khẩu của bạn</span>
+                <input id="username" type="email" placeholder="Email" required>
+                <span class="form-messenger" id="email-error"></span>
+                <input id="password" type="password" placeholder="Password" required>
+                <span class="form-messenger" id="password-error"></span>
+                <div class="remember">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Nhớ mật khẩu</label>
+                </div>
+                <div id="loading" class="loading">Đang xử lý...</div>
+                <button id="login-btn" type="submit">Đăng nhập</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bạn bị quên mật khẩu?</h1>
+                    <p>Bạn cần phải nhập email của bạn, rồi nhập mã xác thực được gửi đến email của bạn để lấy lại mật
+                        khẩu</p>
+                    <button class="hidden" id="login">Quay lại đăng nhập</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Xin chào</h1>
+                    <p>Chào mừng quý phụ huynh đã truy cập đến công thông tin của Đại học Hải Phòng.</p>
+                    <p>Nếu phụ huynh quên mật khẩu hãy bấm vào đây để tìm lại mật khẩu.</p>
+                    <button class="hidden" id="register">Quên mật khẩu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>
