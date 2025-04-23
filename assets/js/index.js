@@ -33,4 +33,3 @@ prev.addEventListener("click", () => {
 });
 
 updateSlider();
-

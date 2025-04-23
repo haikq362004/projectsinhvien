@@ -4,11 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trường đại học hải phòng</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <input type="file">
+    <div class="boder">
+        <div class="header">
+            <div class="logo">
+                <div class="box">
+                    <a href="welcome.html"><img src="assets/images/logo.png" width="80" height="80"></a>
+                    <span style="font-size: 30px;">HPUni</span>
+                </div>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <div class="info">
+                <button>
+                    <i class="fa-solid fa-circle-user" style="font-size: 40px; color: #7082D6"></i>
+                    <span class="student_name" id="text_name">Admin</span>
+                    <!-- <ul id="dropdown">
+                        <li id="change_password">
+                            Đổi mật khẩu
+                        </li>
+                        <li id="logout">
+                            Đăng xuất
+                        </li>
+                    </ul> -->
+                </button>
+            </div>
+        </div>
+        <!-- <div id="overlay" class="overlay"></div>
+
+        <div id="passwordModal" class="modal">
+            <div class="modal-content">
+                <span id="close">❌</span>
+                <h1>Đổi mật khẩu</h1>
+
+                <div class="form-group">
+                    <label for="oldPassword">Mật khẩu hiện tại:</label>
+                    <div class="password-toggle">
+                        <input type="password" id="oldPassword" placeholder="Nhập mật khẩu hiện tại" required>
+                        <span class="toggle-icon" onclick="togglePassword('oldPassword')">👁️</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="newPassword">Mật khẩu mới:</label>
+                    <div class="password-toggle">
+                        <input type="password" id="newPassword" placeholder="Nhập mật khẩu mới" required>
+                        <span class="toggle-icon" onclick="togglePassword('newPassword')">👁️</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Xác nhận mật khẩu mới:</label>
+                    <div class="password-toggle">
+                        <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu mới" required>
+                        <span class="toggle-icon" onclick="togglePassword('confirmPassword')">👁️</span>
+                    </div>
+                </div>
+
+                <button id="changeBtn" onclick="changePassword()">Đổi mật khẩu</button>
+                <div id="loader" class="loader"></div>
+                <div id="message" class="message"></div>
+            </div> -->
+        <!-- </div> -->
+        <div class="infomation">
+            <h1>NHẤN VÀO Ô ĐỂ CHỌN FILE</h1>
+            <div class="info_student">
+                <form id="importForm" enctype="multipart/form-data">
+                    <input type="file" id="excelFile" name="file" accept=".xlsx, .xls" required />
+                    <button type="submit">Gửi</button>
+                </form>
+                
+                <div id="message"></div>
+
+            </div>
+        </div>
+    </div>
 </body>
+<script src="assets/js/admin.js"></script>
 
 </html>

@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .boder {
@@ -43,28 +43,31 @@ body {
     background-color: #f0f0f0;
     margin: 0 auto;
     margin-top: 5px;
-    
+
 }
 
 .box span {
     padding: 5px;
     color: black;
     font-weight: 700;
-    background: linear-gradient(45deg, red,#1a53ff,#ea01ff,#fcfc00);
+    background: linear-gradient(45deg, red, #1a53ff, #ea01ff, #fcfc00);
     background-clip: text;
     color: transparent;
     background-size: 400% 400%;
-    animation:  gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
 }
+
 @keyframes gradient {
 
-    0%{
+    0% {
         background-position: 0%;
     }
-    50%{
+
+    50% {
         background-position: 100%;
     }
-    100%{
+
+    100% {
         background-position: 0%;
     }
 }
@@ -85,12 +88,12 @@ body {
 
 .info {
     padding-left: 300px;
-    
+
 }
 
 .info button {
     border: none;
-    
+
 }
 
 .info span {
@@ -153,7 +156,7 @@ body {
     height: 20px;
     font-size: 20px;
     color: #ABBED7;
-}   
+}
 
 .infomation {
 
@@ -174,7 +177,7 @@ body {
     background: linear-gradient(45deg, blue, red, red);
     -webkit-background-clip: text;
     color: transparent;
-    
+
 
 }
 
@@ -209,6 +212,7 @@ th {
     margin-left: 40px;
     padding: 20px;
 }
+
 .point {
     margin-left: 40px;
 }
@@ -227,11 +231,9 @@ th {
 .point td {
     text-align: center;
     border: 1px solid #333;
-    /* Viền bên trong */
-    padding:10px;
+    padding: 10px;
 }
 
-/* Bo tròn viền ngoài cho bảng */
 .point th:first-child {
     border-top-left-radius: 5px;
 }
@@ -251,11 +253,14 @@ th {
 .text_color {
     background-color: #f2f2f2;
 }
+
 .info button :hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+
 #dropdown {
+    right: 2in;
     border-radius: 10px;
     list-style: none;
     padding: 0;
@@ -264,7 +269,7 @@ th {
     width: 150px;
     background: white;
     position: absolute;
-    /* display: none; */
+    display: none;
 }
 
 #dropdown li {
@@ -274,4 +279,159 @@ th {
 
 #dropdown li:hover {
     background: #f0f0f0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    border-radius: 8px;
+    color: #000;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#passwordForm {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#passwordForm input {
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid #add8e6;
+}
+
+.modal-content {
+    margin: 50px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 4px;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: #1ab2e5c3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.modal-content button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #3367d6;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.password-toggle {
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
 }

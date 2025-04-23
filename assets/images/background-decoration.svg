@@ -1,0 +1,63 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4e73df" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#224abe" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1cc88a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#10855d" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+    </filter>
+  </defs>
+  
+  <!-- Blurred background shapes -->
+  <g filter="url(#blur1)">
+    <circle cx="200" cy="150" r="100" fill="url(#gradient1)">
+      <animate attributeName="cx" values="200;250;200" dur="20s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;180;150" dur="23s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="450" r="120" fill="url(#gradient2)">
+      <animate attributeName="cx" values="600;550;600" dur="25s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="450;420;450" dur="22s" repeatCount="indefinite" />
+    </circle>
+    <ellipse cx="400" cy="300" rx="180" ry="150" fill="url(#gradient1)" opacity="0.3">
+      <animate attributeName="rx" values="180;200;180" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="150;170;150" dur="17s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  
+  <!-- Particles -->
+  <g>
+    <circle cx="100" cy="100" r="2" fill="#4e73df" opacity="0.6">
+      <animate attributeName="cy" values="100;500;100" dur="20s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="200" r="3" fill="#1cc88a" opacity="0.7">
+      <animate attributeName="cx" values="200;600;200" dur="25s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="150" r="2" fill="#4e73df" opacity="0.5">
+      <animate attributeName="cx" values="300;500;300" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="150;400;150" dur="18s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="350" r="3" fill="#1cc88a" opacity="0.6">
+      <animate attributeName="cx" values="500;200;500" dur="22s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="350;200;350" dur="17s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="250" r="2" fill="#4e73df" opacity="0.7">
+      <animate attributeName="cx" values="700;400;700" dur="23s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="250;500;250" dur="19s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Animated lines -->
+  <g stroke-width="1" stroke-dasharray="5,5" opacity="0.3">
+    <path d="M100,100 Q400,50 700,300" stroke="#4e73df" fill="none">
+      <animate attributeName="d" values="M100,100 Q400,50 700,300;M100,150 Q400,200 700,250;M100,100 Q400,50 700,300" dur="20s" repeatCount="indefinite" />
+    </path>
+    <path d="M200,500 Q400,450 600,100" stroke="#1cc88a" fill="none">
+      <animate attributeName="d" values="M200,500 Q400,450 600,100;M200,450 Q400,300 600,150;M200,500 Q400,450 600,100" dur="25s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

@@ -8,7 +8,7 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
-//đăng nhâpj
+//đăng nhập
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form-login');
     const loginBtn = document.getElementById('login-btn');

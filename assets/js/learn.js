@@ -16,8 +16,7 @@ async function fetchStudentData() {
 
       
         const semesterTable = document.getElementById("student_current_semester");
-        semesterTable.innerHTML = ""; // Xóa nội dung cũ
-
+        semesterTable.innerHTML = ""; 
         data.currentSemester.forEach((subject, index) => {
             const row = document.createElement("tr");
             row.innerHTML = `
